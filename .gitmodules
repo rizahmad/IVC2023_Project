@@ -1,3 +1,6 @@
 [submodule "yolov7"]
 	path = yolov7
 	url = git@github.com:WongKinYiu/yolov7.git
+[submodule "JSON2YOLO"]
+	path = JSON2YOLO
+	url = git@github.com:ultralytics/JSON2YOLO.git
