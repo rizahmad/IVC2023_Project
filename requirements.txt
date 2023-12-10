@@ -1,2 +1,7 @@
 fiftyone
 tqdm
+pycocotools
+torch
+numpy
+torchvision
+
