@@ -21,7 +21,7 @@ from util import (
 )
 
 
-def create_args():
+def create_args(options):
     parser = argparse.ArgumentParser()
     arg = parser.add_argument
     arg('ldr', nargs='+', type=process_path, help='Ldr image(s)')
@@ -90,26 +90,23 @@ def create_args():
         default=['.jpg', '.jpeg', '.tiff', '.bmp', '.png'],
         help='Allowed LDR image extensions',
     )
-    
 
-    ldrRoot= os.path.join(os.getcwd(), 'resources', 'yolo-coco-person')
-    ldrTrain = os.path.join(ldrRoot, 'train', 'images')
-    ldrValidation = os.path.join(ldrRoot, 'validation', 'images')
-
-    hdrRoot = os.path.join(os.getcwd(), 'resources', 'hdr-yolo-coco-person')
-    hdrTrain = os.path.join(hdrRoot, 'train', 'images')
-    hdrValidation = os.path.join(hdrRoot, 'train', 'validation')
-
-    weightsPath = os.path.join('hdr-expandnet', 'weights.pth')
-    opt = parser.parse_args([ldrTrain, '--out',hdrTrain, '--use_weights', weightsPath])
+    opt = parser.parse_args(options)
 
     return opt
 
-create_images(create_args())
+ldrRoot= os.path.join(os.getcwd(), 'resources', 'yolo-coco-person')
+ldrTrain = os.path.join(ldrRoot, 'train', 'images')
+ldrValidation = os.path.join(ldrRoot, 'validation', 'images')
 
-# python_file_path = "/content/drive/MyDrive/IVC23/drive/hdr-expandnet-master/expand.py"
-# ldr_input_path = "/content/drive/MyDrive/IVC23/drive/VOC/train/VOC2012_train_val/JPEGImages"
-# hdr_out_path = "/content/drive/MyDrive/IVC23/drive/Generated_HDR"
-# !python "{python_file_path}" "{ldr_input_path}" --out "{hdr_out_path}"
+hdrRoot = os.path.join(os.getcwd(), 'resources', 'hdr-yolo-coco-person')
+hdrTrain = os.path.join(hdrRoot, 'train', 'images')
+hdrValidation = os.path.join(hdrRoot, 'validation', 'images')
+
+weightsPath = os.path.join('hdr-expandnet', 'weights.pth')
+
+#create_images(create_args([ldrTrain, '--out',hdrTrain, '--use_weights', weightsPath]))
+#create_images(create_args([ldrValidation, '--out',hdrValidation, '--use_weights', weightsPath]))
+
 
 
