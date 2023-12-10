@@ -4,3 +4,6 @@
 [submodule "JSON2YOLO"]
 	path = JSON2YOLO
 	url = git@github.com:ultralytics/JSON2YOLO.git
+[submodule "hdr-expandnet"]
+	path = hdr-expandnet
+	url = git@github.com:dmarnerides/hdr-expandnet.git
