@@ -1,5 +1,5 @@
-train: ../resources/yolo-coco-person/train
-val: ../resources/yolo-coco-person/validation
+train: resources/yolo-coco-person/train
+val: resources/yolo-coco-person/validation
 
 # number of classes
 nc: 80

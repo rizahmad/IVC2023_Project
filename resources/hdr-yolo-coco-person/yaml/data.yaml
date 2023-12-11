@@ -1,6 +1,5 @@
-train: /content/drive/MyDrive/IVC23/Development/IVC2023_Project/resources/hdr-yolo-coco-person/train
-val: /content/drive/MyDrive/IVC23/Development/IVC2023_Project/resources/hdr-yolo-coco-person/validation
-
+train: resources/hdr-yolo-coco-person/train
+val: resources/hdr-yolo-coco-person/validation
 
 # number of classes
 nc: 80
