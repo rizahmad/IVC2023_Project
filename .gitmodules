@@ -7,6 +7,6 @@
 [submodule "hdr-expandnet"]
 	path = hdr-expandnet
 	url = git@github.com:dmarnerides/hdr-expandnet.git
-[submodule "HDR_YOLOv7"]
-	path = HDR_YOLOv7
-	url = git@github.com:rizahmad/HDR_YOLOv7.git
+[submodule "hdr-yolov7"]
+	path = hdr-yolov7
+	url = git@github.com:rizahmad/hdr-yolov7.git
