@@ -46,3 +46,13 @@ python train.py --noautoanchor --cfg resources\hdr-yolo-coco-person\yaml\cfg.yam
 python train.py --noautoanchor --cfg resources\yolo-coco-person\yaml\cfg.yaml --data resources\yolo-coco-person\yaml\data.yaml --epochs 300 --weights '' --img-size 320 320
 ```
 
+# hdr detection command
+```
+set OPENCV_IO_ENABLE_OPENEXR=1
+python detect.py --weights runs\train\exp\weights\epoch_099.pt --source resources\hdr4rtt\yolo-hdr4rtt\images --img-size 320
+```
+
+# ldr detection command
+```
+python detect.py --weights runs\train\exp4\weights\epoch_099.pt --source resources\hdr4rtt\tmo-yolo-hdr4rtt\images --img-size 320
+```
