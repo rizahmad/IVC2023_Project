@@ -28,3 +28,9 @@ deactivate
 ```
 pip install torch==2.1.0 torchvision==0.16.0 torchaudio==2.1.0 --index-url https://download.pytorch.org/whl/cu121
 ```
+
+# opencv with hdr images
+hdr images require an enironment variable when training with HDR_YOLOv7
+```
+set OPENCV_IO_ENABLE_OPENEXR=1
+```
