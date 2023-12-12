@@ -34,3 +34,15 @@ hdr images require an enironment variable when training with HDR_YOLOv7
 ```
 set OPENCV_IO_ENABLE_OPENEXR=1
 ```
+
+# hdr training commands
+```
+set OPENCV_IO_ENABLE_OPENEXR=1
+python train.py --noautoanchor --cfg resources\hdr-yolo-coco-person\yaml\cfg.yaml --data resources\hdr-yolo-coco-person\yaml\data.yaml --epochs 300 --weights '' --img-size 320 320
+```
+
+# ldr training command
+```
+python train.py --noautoanchor --cfg resources\yolo-coco-person\yaml\cfg.yaml --data resources\yolo-coco-person\yaml\data.yaml --epochs 300 --weights '' --img-size 320 320
+```
+
