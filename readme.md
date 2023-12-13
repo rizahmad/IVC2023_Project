@@ -1,8 +1,8 @@
 # IVC-2023 Project repository
 ## Group members
-Name | Contact |
-Rizwan Ahmad Bhatti | 21030005@lums.edu.pk |
-Muhammad Saad | 24100012@lums.edu.pk |
+|Name | Contact |
+|Rizwan Ahmad Bhatti | 21030005@lums.edu.pk |
+|Muhammad Saad | 24100012@lums.edu.pk |
 
 ## Directory structure
 Repository consists of some external repositories added as git submodules.
