@@ -22,6 +22,7 @@ requirements.txt
 tmo.py
 yolo.py
 readme.md
+Object_detection_in_HDR_images_v2.pdf
 ```
 ### checkcuda.py
 Used to check if cuda support is present. If not then cuda has to be installed.
@@ -46,6 +47,9 @@ Used to convert MS COCO JSON format to YOLO annotations format using the JSON2YO
 
 ### readme.md
 This file.
+
+### Object_detection_in_HDR_images_v2.pdf
+Project report
 
 ## Experiment setup
 ### Clone IVC2023_Project
